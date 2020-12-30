@@ -83,31 +83,39 @@ h3 {
   background-color: #F4FAFF;
 }
 
-.box-one{
-  background-image: url(assets/amalfi.jpg);
+.box-top {
   background-position: center;
   background-size: cover;
 }
-/* .box-1,
-.box-8 {
-  background-color: #535657;
-  border: solid 2px red;
+
+.box-one {
+  background-image: url(assets/amalfi.jpg);
 }
 
-.box-2,
-.box-7 {
-  background-color: #4F646F;
-  border: solid 2px red;
+.box-two {
+  background-image: url(assets/florence.jpg);
 }
 
-.box-3,
-.box-5 {
-  background-color: #B7ADCF;
-  border: solid 2px red;
+.box-three {
+  background-image: url(assets/venice.jpg);
 }
 
-.box-4,
-.box-6 {
-  background-color: #DEE7E7;
-  border: solid 2px red;
-} */
+.box-four {
+  background-image: url(assets/rome.jpg);
+}
+
+.box-five {
+  background-image: url(assets/verona.jpg);
+}
+
+.box-six {
+  background-image: url(assets/cinque.jpg);
+}
+
+.box-seven {
+  background-image: url(assets/tuscany.jpg);
+}
+
+.box-eight {
+  background-image: url(assets/capri.jpg);
+}
