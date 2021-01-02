@@ -1,0 +1,235 @@
+body {
+  font-family: 'Lato', sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: #DEE7E7;
+}
+
+/* NAV BAR */
+
+nav {
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: #535657;
+}
+
+.nav-left {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  color: #F4FAFF;
+  align-items: baseline;
+}
+
+.nav-text {
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+.nav-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin {
+  color: #F4FAFF;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-title {
+  color: #B7ADCF;
+  font-size: 4vmin;
+}
+
+/* MAIN SECTION */
+
+.grid-title {
+  grid-column: span 4;
+  color: #4F646F;
+  font-size: 4vmin;
+  margin-left: 1%;
+}
+
+/* BOXES */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50% 50%;
+  grid-gap: 2%;
+  height: 100vh;
+  padding: 1%;
+  margin-bottom: 25vh;
+}
+
+.box {
+  height: 100%;
+}
+
+/* TOP OF BOX */
+
+.box-top {
+  height: 40%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 2%;
+}
+
+.likes {
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h3,
+h4 {
+  font-size: 1.5vmin;
+  margin: 0;
+}
+
+.number {
+  font-size: 3.5vmin;
+  margin: 0;
+}
+
+.box-top {
+  background-position: center;
+  background-size: cover;
+}
+
+/* BOTTOM OF BOX */
+
+.box-bottom {
+  height: 50%;
+  background-color: #F4FAFF;
+  padding: 5%;
+}
+
+.box-title {
+  font-size: 3vmin;
+  color: #4F646F;
+}
+
+.website {
+  border: solid #B7ADCF;
+  padding: 4%;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hotel-number {
+  color: #4F646F;
+}
+
+/* BOX IMAGES */
+
+.box-one {
+  background-image: url(assets/amalfi.jpg);
+}
+
+.box-two {
+  background-image: url(assets/florence.jpg);
+}
+
+.box-three {
+  background-image: url(assets/venice.jpg);
+}
+
+.box-four {
+  background-image: url(assets/rome.jpg);
+}
+
+.box-five {
+  background-image: url(assets/verona.jpg);
+}
+
+.box-six {
+  background-image: url(assets/cinque.jpg);
+}
+
+.box-seven {
+  background-image: url(assets/tuscany.jpg);
+}
+
+.box-eight {
+  background-image: url(assets/capri.jpg);
+}
+
+.mobile-menu {
+  visibility: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 250vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    height: 250vh;
+  }
+
+  .admin,
+  .nav-left {
+    display: none;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-title {
+    margin-right: 20px;
+    font-size: 6vmin;
+  }
+
+  .mobile-menu {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+    height: 250vh;
+  }
+
+  .admin,
+  .nav-left {
+    display: none;
+  }
+
+  .nav-right {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .main-title {
+    margin-right: 20px;
+    font-size: 6vmin;
+  }
+
+  .mobile-menu {
+    visibility: visible;
+  }
+}
