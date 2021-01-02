@@ -79,7 +79,8 @@ nav {
   align-items: flex-end;
 }
 
-h3 {
+h3,
+h4 {
   font-size: 1.5vmin;
   margin: 0;
 }
@@ -129,4 +130,23 @@ h3 {
 .box-bottom {
   height: 55%;
   background-color: #F4FAFF;
+  padding: 5%;
+}
+
+.box-title {
+  font-size: 3vmin;
+  color: #4F646F;
+}
+
+.website {
+  border: solid #B7ADCF;
+  padding: 4%;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.hotels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
