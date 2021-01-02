@@ -62,7 +62,6 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 50% 50%;
-  /* grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); */
   grid-gap: 2%;
   height: 100vh;
   padding: 1%;
@@ -172,6 +171,8 @@ h4 {
 .mobile-menu {
   visibility: hidden;
 }
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 1400px) {
   .container {
