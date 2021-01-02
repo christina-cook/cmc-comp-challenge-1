@@ -6,7 +6,6 @@ body {
 }
 
 nav {
-  border: solid 2px blue;
   height: 15vh;
   display: flex;
   justify-content: space-between;
@@ -17,11 +16,14 @@ nav {
 .nav-left {
   display: flex;
   flex-direction: row;
-  border: solid;
-  justify-content: space-evenly;
   width: 40%;
   color: #F4FAFF;
-  align-items: flex-end;
+  align-items: center;
+}
+
+.nav-text {
+  margin-left: 2%;
+  margin-right: 5%;
 }
 
 .nav-right {
@@ -29,21 +31,31 @@ nav {
   flex-direction: column;
 }
 
+.admin {
+  color: #F4FAFF;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
 .main-title {
   color: #B7ADCF;
   font-size: 4vmin;
 }
 
-.container {
-  border: solid 2px pink;
-  display: grid;
-  /* grid-template-columns: 25% 25% 25% 25%; */
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 10% 45% 45%;
-  grid-gap: 2%;
-  height: 85vh;
-  padding: 1%;
-}
+/* @media screen and (min-width: 615px) { */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% 45% 45%;
+    grid-gap: 2%;
+    height: 100vh;
+    padding: 1%;
+    margin-bottom: 25vh;
+  }
+/* } */
 
 .grid-title {
   grid-column: span 4;
@@ -51,8 +63,9 @@ nav {
   font-size: 4vmin;
 }
 
+/* BOXES */
+
 .box-top {
-  border: solid 2px yellow;
   height: 40%;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -74,13 +87,6 @@ h3 {
 .number {
   font-size: 3.5vmin;
   margin: 0;
-}
-
-
-.box-bottom {
-  border: solid 2px blue;
-  height: 60%;
-  background-color: #F4FAFF;
 }
 
 .box-top {
@@ -118,4 +124,9 @@ h3 {
 
 .box-eight {
   background-image: url(assets/capri.jpg);
+}
+
+.box-bottom {
+  height: 55%;
+  background-color: #F4FAFF;
 }
