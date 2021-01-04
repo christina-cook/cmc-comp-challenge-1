@@ -208,10 +208,10 @@ h4 {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .container {
     grid-template-columns: 1fr;
-    height: 250vh;
+    height: 200vh;
   }
 
   .admin,
